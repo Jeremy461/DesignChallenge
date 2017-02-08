@@ -20,18 +20,12 @@
         </ul>
     </div>
 </nav>
+<div id="wrapper">
+    <div id="map"></div>
+    <div id="planner"></div>
+</div>
 
-<div id="map"></div>
-
-<script>
-    function initMap() {
-        var barcelona = {lat:41.3790607 , lng:2.1704957 };
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 14,
-            center: barcelona
-        });
-    }
-</script>
+<script src="js/main.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkYLgArPgGMvLDYLDMPLfaJir8lyt5XGc&callback=initMap">
 </script>
