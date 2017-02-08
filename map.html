@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DesignChallenge</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div id="map"></div>
+
+<script>
+    function initMap() {
+        var barcelona = {lat:41.3790607 , lng:2.1704957 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: barcelona
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkYLgArPgGMvLDYLDMPLfaJir8lyt5XGc&callback=initMap">
+</script>
+
+</body>
+</html>

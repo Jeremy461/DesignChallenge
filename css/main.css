@@ -18,3 +18,33 @@
     display: inline-block;
 
 }
+
+.flagContainer{
+    text-align: center;
+}
+
+.flag{
+    width: 60%;
+    margin: 20px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.flag:hover{
+    animation: flagHover 0.3s;
+    animation-fill-mode: both;
+}
+
+@keyframes flagHover{
+    from{
+        width: 60%;
+        box-shadow: 10px 10px 10px gray;
+    }
+    to{
+        width: 55%;
+        box-shadow: 5px 5px 5px gray;
+    }
+}
+
+.titleContainer{
+    text-align: center;
+}
